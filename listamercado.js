@@ -26,12 +26,12 @@ document.querySelector('input[type=submit]').addEventListener('click',()=>{
         totalCompra += parseFloat(val.valor);
     })
 
+    //considerar duas casas decimais
+    totalCompra = totalCompra.toFixed(2)
+
     //apreentando valor total na tela
     var total = document.querySelector('.soma-produto')
     total.innerHTML = `<h2> Total: `+totalCompra+`</h2>`
-
-    //considerar duas casas decimais
-    totalCompra = totalCompra.toFixed(2)
 
     //Resentando caixas de entrada
     nomeProduto.value = "";
