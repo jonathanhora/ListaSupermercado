@@ -1,0 +1,117 @@
+
+:root{
+    --color-azul: #3C91E6;
+    --color-vermelho: #B20D30;
+    --color-branco: white;
+    --color-preto: #161925;
+    --color-azulMarinho: #23395B;
+
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: var(--color-branco);;
+}
+
+header{
+    background-color: var(--color-vermelho);
+    text-align: center;
+    color: var(--color-branco);
+    padding: 50px 0;
+    font-size: 25px;
+}
+
+.lista-cadastro{
+    display: flex;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.lista-cadastro input[type=text]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.lista-cadastro input[type=number]{
+    flex: 1;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+}
+
+.lista-cadastro input[type=submit]{
+    height: 40px;
+    margin-left: 10px;
+    width: 120px;
+    border-radius: 20px;
+    border-style: none;
+    color: var(--color-branco);
+    font-size: 20px;
+    font-weight: bold;
+    background-color: var(--color-azulMarinho);
+    cursor: pointer;
+}
+
+.lista-cadastro input[type=submit]:active{
+    background-color:var(--color-azul);
+}
+
+.lista-produto-single{
+    padding: 10px 0;
+    margin: 20px 0;
+    border-bottom: 1px solid var(--color-azulMarinho);
+    display: flex;
+}
+
+.lista-produto-single h3{
+    flex: 1;
+    padding: 0 20px;
+    color: var(--color-preto);
+}
+
+h3.price-produto{
+    left: 15%;
+    text-align:  right;
+    font-size: 17;
+}
+
+
+h3.price-produto > span{
+    background-color: var(--color-azul);
+    color: var(--color-branco);
+    padding: 8px 10px;
+    border-radius: 20px;
+
+}
+
+.soma-produto{
+    text-align: center;
+    margin: 20px;
+    color: var(--color-branco);
+    padding:  8px 10px;
+    border-radius: 20px;
+    background-color: var( --color-vermelho);
+}
+
+.limparCarrinho{
+    text-align: center;
+    margin: 20px;
+    color: var(--color-branco);
+    padding:  8px 10px;
+    border-radius: 20px;
+    background-color: var( --color-vermelho);
+    cursor: pointer;
+}
+
+.limparCarrinho:active{
+    background-color: #540919;
+}
